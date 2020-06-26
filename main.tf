@@ -1,5 +1,5 @@
 resource "ibm_lbaas" "lbaas" {
-  name        = "lbaas-cguarany3"
+  name        = "lbaas-cguarany4"
   description = "created-by-schematics"
   type        = "PRIVATE"
   subnets     = [2088037]
@@ -17,5 +17,8 @@ resource "ibm_lbaas_server_instance_attachment" "lbaas_member" {
   count              = 1
   private_ip_address = "10.95.118.234"
   weight             = 40
-  lbaas_id           = "${ibm_lbaas.lbaas.id}"
+  lbaas_id           = ibm_lbaas.lbaas.id
+  
+  # Versao 0.11.x
+  #  lbaas_id           = "${ibm_lbaas.lbaas.id}"
 }
