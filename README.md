@@ -1,4 +1,4 @@
-# Load Balancer as a service example on IBM CLOUD
+# Load Balancer as a service example on IBM CLOUD (Classic)
 
 This example shows how to launch a load balancer as a service on IBM Cloud using Schematics / Terraform version 0.11.x
 
