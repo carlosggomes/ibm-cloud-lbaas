@@ -1,6 +1,6 @@
 resource "ibm_lbaas" "lbaas" {
   name        = "test"
-  description = "updated desc-used for terraform uat"
+  description = "Load Balance created via Schematics - Terraform"
   subnets     = [1492041]
  # datacenter  = "dal13"
 
